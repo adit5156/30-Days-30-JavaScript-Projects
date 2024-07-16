@@ -1,0 +1,53 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    width: 400px;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 5px 2px 10px 5px rgb(167, 167, 167);
+}
+
+.card img {
+    width: 100%;
+}
+
+.cardBody {
+    padding: 50px;
+    padding-top: 0;
+}
+
+.cardBody h1 {
+    font-size: 2rem;
+}
+
+.btnBody {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    font-size: 1rem;
+    padding-block: 12px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    scale:105%;
+    transition: all 200ms;
+}
+
+button#noBtn {
+    background-color: red;
+}
