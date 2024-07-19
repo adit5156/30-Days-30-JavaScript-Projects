@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Expense Tracking Web App</title>
+</head>
+
+<body class="bg-black text-[#d36feb]">
+
+    <section class="flex justify-center mt-2">
+        <div class="w-[450px] border-2 border-[#d36feb] rounded-3xl p-8">
+            <h1 class="text-4xl">₹<span class="text-5xl" id="balance">0</span> <span class="text-xl">Main Balance</span></h1>
+
+            <div class="flex justify-around items-center border-2 border-[#d36feb] rounded-2xl p-4 mt-5">
+                <div>
+                    <h1 class="text-center text-xl">Income</h1>
+                    <p class="mt-2 px-8 py-4 border-2 border-[#d36feb] rounded-xl text-2xl">₹<span id="incomeDisplay">0</span></p>
+                </div>
+                <div>
+                    <h1 class="text-center text-xl">Expense</h1>
+                    <p class="mt-2 px-8 py-4 border-2 border-[#d36feb] rounded-xl text-2xl">₹<span  id="expenseDisplay">0</span></p>
+                </div>
+            </div>
+
+            <form>
+            <input id="amount" type="number" class="mt-4 py-2 px-4 w-full text-2xl bg-transparent text-[bg-[#d36feb]] border-2 border-[#d36feb] rounded-xl outline-0" placeholder="Amount" required>
+            <input id="details" type="text" class="mt-4 py-2 px-4 w-full text-2xl bg-transparent text-[bg-[#d36feb]] border-2 border-[#d36feb] rounded-xl outline-0" placeholder="Details" required>
+
+            <div class="text-center">
+            <button id="expenseBtn" class="text-red-500 border-2 border-[#d36feb] rounded-xl px-12 py-3 w-[48%] mt-5 text-xl mr-2">Expense</button>
+            <button id="incomeBtn" class="text-green-500 border-2 border-[#d36feb] rounded-xl px-12 py-3 w-[48%] mt-5 text-xl">Income</button>
+            </div>
+        </form>
+
+            <hr class="border border-[#d36feb] mt-5 mb-5">
+
+            <div>
+                <h1 class="text-3xl">Transactions</h1>
+                <div class="mt-4" id="transactionParent">
+                    <!-- <h2 class="border-2 border-[#d36feb] rounded-xl px-5 py-2 text-green-400 mt-2">Income ₹5000 by Freelance</h2>
+                    <h2 class="border-2 border-[#d36feb] rounded-xl px-5 py-2 text-red-400 mt-2">Expense ₹500 on Marketing</h2>
+                    <h2 class="border-2 border-[#d36feb] rounded-xl px-5 py-2 mt-2"></h2> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
