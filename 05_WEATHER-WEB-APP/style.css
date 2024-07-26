@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    padding: 20px 30px;
+    box-shadow: #e5dfdf -1px 0px 10px 8px;
+    border-radius: 16px;
+}
+
+.card input {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid black;
+}
+
+.card button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 0;
+    margin: 8px 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: rgb(149, 144, 144);
+    scale: 102%;
+    transition: all 200ms;
+}
+
+.weatherCard {
+    padding: 1rem;
+    margin: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#cityName {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+#humidity {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#wind {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+#weatherDesc {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#weatherImage {
+    display: none;
+}
