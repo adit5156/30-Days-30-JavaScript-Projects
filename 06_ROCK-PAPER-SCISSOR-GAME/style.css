@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+
+
+.card {
+    width: 450px;
+    box-shadow: 0px 1px 10px 4px #b8b4b4;
+    border-radius: 12px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.flex-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-img img {
+    width: 45%;
+}
+
+.right-img {
+    transform: scaleX(-1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    margin-block: 50px;
+}
+
+.card-bottom {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.card-bottom img {
+    width: 30%;
+    rotate: -90deg;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-bottom img:hover {
+    scale: 102%;
+    transition: all 200ms;
+}
+
+.animate-left {
+    animation: shakeLeft 1s infinite;
+}
+
+.animate-right {
+    animation: shakeRight 1s infinite;
+}
+
+@keyframes shakeLeft {
+    0% {
+        rotate: 0;
+    }
+    50% {
+        rotate: 12deg;
+    }
+    100% {
+        rotate: 0;
+    }
+}
+
+@keyframes shakeRight {
+    0% {
+        rotate: 0;
+    }
+    50% {
+        rotate: -12deg;
+    }
+    100% {
+        rotate: 0;
+    }
+}
